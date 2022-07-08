@@ -17,7 +17,6 @@ from pathlib import Path
 import shutil
 import pandas as pd
 
-
 def crystal_lattices137():
     a, c = 3.56559516, 5.16231468
     s137 = Structure.from_spacegroup(
@@ -391,12 +390,12 @@ if __name__ == "__main__":
             #if_tetra_is_slab(j,i,0)
             #view(j)
             #view(s137averaged)
-        
-        
+
+
             #s137s29 = create_slab(j,i, size_s137, size_s29,0)
             #s137s29 = create_minislab(s137averaged, s29averaged,0)# size_s137, size_s29, 0)
             view(s137s29)
-        
+
             #s137s29 = create_slab(j, i, size_s137, size_s29, 0)
             #view(s137s29)
             #os.mkdir(r"/home/richard/scripts/s137s29/".join(str(np.array([1, 2, 3]).dot(i))))
@@ -470,7 +469,7 @@ if __name__ == "__main__":
                     continue
 
 
-                
+
                 s137s29 = create_slab(s137averaged, s29averaged, size_s137, size_s29, j)
                 view(s137s29)
                 #ic(interface_check(s137s29, s137averaged, size_s137))
